@@ -24,12 +24,25 @@ body{
  h3,
  h4,
  h5,
- h6{
+ h6,
+ p{
     margin: 0;
 }
  ul{
  margin: 0;
  padding-left: 0;
+}
+
+img{
+    display: block;
+}
+/* -----utilities----- */
+
+ 
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .link{
@@ -39,24 +52,37 @@ body{
     list-style: none;
 }
 
-/* -----ШАПКА----- */
-.container{
-    background-color: tomato;
+.container {
+    outline: 1px dashed green;
     width: 1230px;
-    margin-right: 0;
-    margin-left: 0;
+    padding: 0px 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
+/* -----ШАПКА----- */
 
-.link-logo{
+
+/* ------logo----- */
+
+.header-logo{
     font-family: 'Raleway';
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em;
         color: var(--accent-color);
 }
+
 .header-logo{
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.top-logo{
     color: var(--primari-text-color);
 }
+
+
 .header-link{
     font-family: 'Roboto';
         font-weight: 500;
@@ -79,6 +105,15 @@ body{
 
 /* -----ГЕРОЙ----- */
 
+.hero{
+    background-color: var(--second-background-color);
+}
+
+.hero-title{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
 .main-section{
     background-color: var(--second-background-color);
 }
@@ -87,6 +122,23 @@ body{
 }
 
 /* -----переваги----- */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.benefits-title{
+    margin-bottom: 10px;
+}
+
 .main-title{
     font-family: 'Roboto';
         font-weight: 900;
@@ -125,7 +177,7 @@ body{
 /* -----наша команда----- */
 
 .team{
-    background-color: #F5F4FA;;
+    background-color: #F5F4FA;
 }
 
 .team-employee{
@@ -219,9 +271,32 @@ body{
 .footer{
   background-color: var(--second-background-color);
 }
-.footer-logo{
+
+.bottom-logo {
     color: var(--white-color);
 }
+
+.footer-logo {
+    font-family: 'Raleway';
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+.footer-logo{
+    display: block;
+    margin-bottom: 20px;
+    padding-top: 60px;
+}
+
+.contact-list{
+    padding-bottom: 60px;
+}
+
+.contact-list > li:not(:last-child){
+    margin-bottom: 9px;
+}
+
 .contact-address{
     font-family: 'Roboto';
         font-size: 14px;
