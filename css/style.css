@@ -56,7 +56,7 @@ img{
 
 .container {
     outline: 1px dashed green;
-    width: 1230px;
+    width: 1200px;
     padding: 0px 15px;
     margin-right: auto;
     margin-left: auto;
@@ -64,35 +64,26 @@ img{
 /* -----ШАПКА----- */
 
 
-.header .container{
+.header > .container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
-
-.header-nav{
-    display: flex;
-    margin-right: 93px;
-}
-
 .header-list{
     display: flex;
-    align-items: center;
+     padding: 32px;
 }
-
-.header-link{
-    margin-right: 50px;
-}
-
-.header-list > li:not(:last-child){
+.header-items:not(:last-child){
     margin-right: 50px;
 }
 
 .feedback-list{
     display: flex;
+    margin-left: auto;
+    padding: 32px;
 }
-
-
+.feedback-items:not(:last-child){
+    margin-right: 50px;
+}
 
 .header-logo{
     font-family: 'Raleway';
@@ -100,13 +91,16 @@ img{
         line-height: 1.19;
         letter-spacing: 0.03em;
         color: var(--accent-color);
+        margin-right: 93px;
+        padding-top: 24px;
+        padding-bottom: 25px;
 }
 
-.header-logo{
+/* .header-logo{
    margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
-}
+} */
 
 .top-logo{
     color: var(--primari-text-color);
