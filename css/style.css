@@ -4,6 +4,8 @@
  --accent-color: #2196F3; 
  --white-color: #ffffff; 
  --second-background-color: #2F303A;
+
+ --main-margin: 10px;
 }
  
 html{
@@ -62,7 +64,35 @@ img{
 /* -----ШАПКА----- */
 
 
-/* ------logo----- */
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav{
+    display: flex;
+    margin-right: 93px;
+}
+
+.header-list{
+    display: flex;
+    align-items: center;
+}
+
+.header-link{
+    margin-right: 50px;
+}
+
+.header-list > li:not(:last-child){
+    margin-right: 50px;
+}
+
+.feedback-list{
+    display: flex;
+}
+
+
 
 .header-logo{
     font-family: 'Raleway';
@@ -73,7 +103,7 @@ img{
 }
 
 .header-logo{
-    display: block;
+   margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
 }
@@ -135,8 +165,20 @@ img{
     overflow: hidden;
 }
 
+
+.benefits-list{
+    display: flex;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.benefits-list >li:not(:last-child){
+    margin-right: 30px;
+}
+
+
 .benefits-title{
-    margin-bottom: 10px;
+    margin-bottom: var(--main-margin);
 }
 
 .main-title{
@@ -166,11 +208,29 @@ img{
 
 /* ------чим займаемося------ */
 
-.title{
-    font-family: 'Roboto';
-        font-size: 36px;
+.works-items{
+    width: calc((100%-60px)/3);
+   
+}
+
+.works-items:not(:last-child){
+    margin-right: 30px;
+
+}
+
+
+.app-list{
+    display: flex;
+    padding-top: 186px;
+    padding-bottom: 94px;
+}
+
+.works-title{
+    font-size: 36px;
         line-height: 1.16;
+        text-align: center;
         letter-spacing: 0.03em;
+    
         color: var(--primari-text-color);
 }
 
@@ -180,12 +240,26 @@ img{
     background-color: #F5F4FA;
 }
 
+.team-title{
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+    
+        color: var(--primari-text-color);
+}
+
+.employees > img{
+    margin-bottom: 30px;
+}
+
 .team-employee{
     font-family: 'Roboto';
         font-weight: 500;
         font-size: 16px;
         line-height: 1.18;
         letter-spacing: 0.03em;
+        margin-bottom: var(--main-margin);
         color: var(--primari-text-color);
 }
 .team-text{
@@ -193,6 +267,7 @@ img{
         font-size: 16px;
         line-height: 1.18;
         letter-spacing: 0.03em;
+        padding-bottom: 30px;
         color: var(--secondary-text-color);
 }
 
