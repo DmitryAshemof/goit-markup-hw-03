@@ -70,6 +70,8 @@ img{
     margin-right: auto;
     margin-left: auto;
     background-color: var(--white-color);
+    border: 1px solid #ECECEC;
+
 }
 
 .header > .container{
