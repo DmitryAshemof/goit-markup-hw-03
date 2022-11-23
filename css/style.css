@@ -153,6 +153,9 @@ font-family: 'Roboto';
 
 /* -----герой----- */
    
+.main{
+    background: #F5F5F5;;
+}
 
 .hero{
     background-color: var(--second-background-color);
@@ -392,7 +395,7 @@ font-family: 'Roboto';
 /* ------портфоліо----- */
 
 .cards{
-    padding-bottom: 0;
+    padding-bottom: 94px;
     padding-top: 0;
 }
 
@@ -409,17 +412,20 @@ font-family: 'Roboto';
     display: flex;
     flex-wrap: wrap;
    margin-right: calc(-1 * 30px);
-   margin-bottom: calc(-1 *30px);
+   margin-bottom: calc(-1 * 30px);
+   margin-left: calc(-1 * 30px);
 } 
 
 
 
 .portfolio-items {
-       flex-basis: calc(100% / 3 - 30px);
+    flex-basis: calc(100% / 3 - 30px);
     margin-right: 30px;
     margin-bottom: 30px;
     background: var(--white-color);
+    border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
 }
 
 .border{
