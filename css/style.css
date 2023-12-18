@@ -43,7 +43,6 @@ p{
     color: #434455;
 }
 .container {
-    display: flex;
     max-width: 1158px;
     margin-left: 156px;
     margin-right: 156px;
@@ -58,9 +57,15 @@ p{
     width: 1440px;
     height: 72px;
     flex-shrink: 0;
-     border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
+    border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
     padding-top: 24px;
     padding-bottom: 24px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header .container {
+    display: flex;
 }
 
 .logo{
@@ -123,10 +128,18 @@ p{
     line-height: 1.07;
     letter-spacing: 0.02em;
    color: #FFFFFF;
+   margin-top: 68px;
   }
 
  .hero{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    width: 1440px;
+    height: 600px;
+    flex-shrink: 0;
     background-color: #2E2F42;
+    margin-left: auto;
+    margin-right: auto;
  }
 
  .button{
@@ -138,6 +151,17 @@ p{
     color: #FFFFFF;
     background-color: #4D5AE5;
     cursor: pointer;
+
+    display: block;
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    margin-top: 48px;
+    margin-bottom: 68px;
+   margin-left: auto;
+   margin-right: auto;
  }
  .button:hover,
  .button:focus{
