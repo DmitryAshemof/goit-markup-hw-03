@@ -170,12 +170,38 @@ p{
 
  /* ADVANTAGE */
 
+.advantage {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    
+   
+}
+
+.advantage .container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
  .advantage-title{
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+ }
+
+ .advantage-list {
+    display: flex;
+    gap: 24px; 
+  
+ }
+
+ .advantage-item {
+    display: flex;
+        width: 264px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
  }
  .advantage-text{
     font-size: 16px;
