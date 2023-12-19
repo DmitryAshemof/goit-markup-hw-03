@@ -174,7 +174,6 @@ p{
     padding-top: 120px;
     padding-bottom: 120px;
     
-   
 }
 
 .advantage .container {
@@ -213,19 +212,47 @@ p{
 
   /* OUR TEAM */
 
+.team .container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .team{
+    width: 1440px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #F4F4FD;
 }
 
-  .title{
+  .title {
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
     color: #2E2F42;
+    margin-bottom: 72px;
   }
-.name{
+
+.team-list {
+    display: flex;
+    gap: 24px;
+}  
+
+.team-card {
+    display: inline-flex;
+        padding-bottom: 32px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        border-radius: 0px 0px 4px 4px;
+        background: var(--WHITE, #FFF);
+        box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.name {
     text-align: center;
     font-size: 20px;
     font-weight: 500;
@@ -233,14 +260,14 @@ p{
     letter-spacing: 0.02em;
     color: #2E2F42;
 }
-.team-text{
+.team-text {
     text-align: center;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
 }
-.card{
+.team-card {
     color: #2E2F42;
     background-color: #FFFFFF;
 }
