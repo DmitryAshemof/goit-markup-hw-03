@@ -58,14 +58,16 @@ p{
     height: 72px;
     flex-shrink: 0;
     border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
-    padding-top: 24px;
-    padding-bottom: 24px;
-    margin-right: auto;
-    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
 }
 
 .header .container {
     display: flex;
+    width: 1158px;
+    justify-content: space-between;
+    
 }
 
 .logo{
@@ -75,7 +77,10 @@ p{
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4D5AE5
+    color: #4D5AE5;
+    
+    margin-right: 76px;
+    
 }
 
 .web{
@@ -93,8 +98,8 @@ p{
     display: inline-flex;
     align-items: flex-start;
     gap: 40px;
-    margin-left: 76px;
-    margin-right: 332px;
+    padding: 24px 0 24px;
+    
 }
 .nav-link{
     line-height: 1.5;
@@ -110,6 +115,7 @@ p{
 
 .address-list {
     display: flex;
+    padding: 24px 0 24px;
     gap: 40px;
 }
 
@@ -123,17 +129,18 @@ p{
   /* HERO */
 
   .main-title{
+    display: block;
     text-align: center;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-   color: #FFFFFF;
-   margin-top: 68px;
+    color: #FFFFFF;
+    max-width: 496px;
+    margin: 0 auto;
   }
 
  .hero{
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 188px 0 188px;
     width: 1440px;
     height: 600px;
     flex-shrink: 0;
@@ -151,6 +158,10 @@ p{
     color: #FFFFFF;
     background-color: #4D5AE5;
     cursor: pointer;
+    border: none;
+
+    min-width: 169px;
+    height: 56px;
 
     display: block;
     padding: 16px 32px;
@@ -160,8 +171,8 @@ p{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     margin-top: 48px;
     margin-bottom: 68px;
-   margin-left: auto;
-   margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
  }
  .button:hover,
  .button:focus{
@@ -181,7 +192,12 @@ p{
     margin-right: auto;
 }
 
- .advantage-title{
+.advantage-title {
+    visibility: hidden;
+    margin-bottom: 8px;
+}
+
+ .advantage-post-title {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -196,11 +212,11 @@ p{
  }
 
  .advantage-item {
-    display: flex;
-        width: 264px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
+     display: flex;
+     width: calc((100% - 72px) / 4);
+     flex-direction: column;
+     align-items: flex-start;
+     gap: 8px;
  }
  .advantage-text{
     font-size: 16px;
@@ -241,17 +257,30 @@ p{
     gap: 24px;
 }  
 
+
 .team-card {
     display: inline-flex;
-        padding-bottom: 32px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 32px;
-        border-radius: 0px 0px 4px 4px;
-        background: var(--WHITE, #FFF);
-        box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    width: calc((100% - 72px) / 4);
+    padding-bottom: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    border-radius: 0px 0px 4px 4px;
+    background: var(--WHITE, #FFF);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
+
+.employer {
+    display: flex;
+    width: 232px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 32px 0 32px;
+}
+
 .name {
     text-align: center;
     font-size: 20px;
@@ -347,6 +376,7 @@ p{
     flex-shrink: 0;
     margin-left: auto;
     margin-right: auto;
+    padding: 100px 0 100px;
     background-color: #2E2F42;
  }
 
@@ -364,7 +394,7 @@ p{
     text-transform: uppercase;
     color: #4D5AE5;
 
-    display: block;
+    display: inline-block;
     padding-top: 100px;
     margin-bottom: 16px;
  }
