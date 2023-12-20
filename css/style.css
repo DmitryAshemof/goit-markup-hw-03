@@ -66,10 +66,10 @@ p{
 .header .container {
     display: flex;
     width: 1158px;
-    /* padding-left: 15px;
-    padding-right: 15px; */
-    /* padding-top: 24px;
-    padding-bottom: 24px; */
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     justify-content: space-between;
     
 }
@@ -96,14 +96,16 @@ p{
 .nav {
     display: flex;
     align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .nav-list {
     display: inline-flex;
     align-items: flex-start;
     gap: 40px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    /* padding-top: 24px;
+    padding-bottom: 24px; */
     
 }
 .nav-link{
