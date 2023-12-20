@@ -49,17 +49,17 @@ p{
 /* HEADER */
 
 .header {
+    width: 1158px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1158px;
     height: 72px;
     flex-shrink: 0;
     border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
-    /* padding-left: 15px;
+    padding-left: 15px;
     padding-right: 15px;
     padding-top: 24px;
-    padding-bottom: 24px; */
+    padding-bottom: 24px;
     margin: 0 auto;
 }
 
